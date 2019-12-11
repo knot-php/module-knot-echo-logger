@@ -1,0 +1,34 @@
+{
+  "name": "knot-php/module-knot-echo-logger",
+  "description": "kNot Framwork echo logger installer modules",
+  "keywords": ["PHP","PHP7","Module","echo logger","kNot framework"],
+  "homepage": "https://github.com/knot-php/module-knot-echo-logger",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Katsuki Shuto",
+      "email": "stk2k@knot-framework.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*",
+    "knot-lib/kernel": "~0.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.3.0",
+    "php-coveralls/php-coveralls": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "KnotPhp\\Module\\KnotEchoLogger\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KnotPhp\\Module\\KnotEchoLogger\\Test\\": "test/include/",
+      "KnotPhp\\Module\\KnotEchoLogger\\Demo\\": "demo/include/"
+    }
+  }
+}
